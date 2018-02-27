@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>3D</title>
+		<style type="text/css">
+			body{
+				max-width: 60em;
+				margin: 0 auto;
+			}
+			.wrap{
+				border:1px solid #000000;
+				perspective: 1200px;
+				position: relative;
+			}
+			.box{
+				transform-style: preserve-3d;
+				/*样式*/
+				width: 200px;
+				height: 200px;
+				border:1px solid #CCCCCC;
+				/*位置*/
+				position: relative;
+				top:50%;
+				left: 50%;
+				margin-left:-100px;
+				margin-top: 10px;
+				/*动画*/
+				animation:zhuan 4s ease;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+			.box div{
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				opacity: 0.5;
+
+			}
+			.d1{
+				background:red ;
+				transform: rotateY(0deg)translateZ(200px);
+			}
+			.d2{
+				background:yellow;
+				transform: rotateY(60deg)translateZ(200px);
+			}
+			.d3{
+				background:green;
+				transform: rotateY(120deg)translateZ(200px);
+			}
+			.d4{
+				background:blue;
+				transform: rotateY(180deg)translateZ(200px);
+			}
+			.d5{
+				background:#8E5303;
+				transform: rotateY(240deg)translateZ(200px);
+			}
+			.d6{
+				background:#C7254E;
+				transform: rotateY(300deg)translateZ(200px);
+			}
+			/*添加3D旋转效果，环绕x和y旋转90度*/
+			@keyframes zhuan{
+				from{transform: rotateX(0deg)rotateY(0deg);}
+				to{transform: rotateX(-10deg)rotateY(360deg);}
+			}
+			/*悬浮状态下暂停动画*/
+			.box:hover{
+				animation-name: zhuan;
+				animation-play-state: paused;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box">
+				<div class="d1"></div>
+				<div class="d2"></div>
+				<div class="d3"></div>
+				<div class="d4"></div>
+				<div class="d5"></div>
+				<div class="d6"></div>
+			</div>
+		</div>
+	</body>
+</html>
