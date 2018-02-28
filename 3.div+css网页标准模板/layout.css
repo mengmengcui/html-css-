@@ -1,0 +1,42 @@
+body { font-family:Verdana; font-size:14px; margin:0; background-color: #fff;}
+ /*固定宽度-1*/
+#container1 {margin:0 auto; width:900px; height:500px; background:#6cf;}
+ /*固定宽度-2*/
+#container2 {margin:0 auto; width:900px;}
+#header2 { height:100px; background:#6cf; margin-bottom:5px;}
+#mainContent2 { height:500px; background:#cff;}
+/*固定宽度-3*/
+#container3 {margin:0 auto; width:900px;}
+#header3 { height:100px; background:#6cf; margin-bottom:5px;}
+#mainContent3 { height:500px; background:#cff; margin-bottom:5px;}
+#footer3 { height:60px; background:#6cf;}
+/*固定宽度-4*/
+#container4 {margin:0 auto; width:900px;}
+#header4 { height:100px; background:#6cf; margin-bottom:5px;}
+#menu4 { height:30px; background:#09c; margin-bottom:2px;}
+#mainContent4 { height:500px; background:#cff; margin-bottom:5px;}
+#footer4 { height:60px; background:#6cf;}
+/*固定宽度-5*/
+#container5 {margin:0 auto; width:900px;}
+#sidebar5 { float:left; width:200px; height:500px; background:#6cf;}
+#content5 { float:right; width:695px; height:500px; background:#cff;}
+/*固定宽度-6*/
+#container6 {margin:0 auto; width:900px;}
+#sidebar6 { float:right; width:200px; height:500px; background:#6cf;}
+#content6{ float:left; width:695px; height:500px; background:#cff;}
+/*固定宽度-7*/
+#container7 {margin:0 auto; width:900px;}
+#sidebar7 { float:left; width:447px; height:500px; background:#6cf;}
+#content7 { float:right; width:447px; height:500px; background:#cff;}
+/*固定宽度-8*/
+#container8 {margin:0 auto; width:900px;}
+#header8 { height:100px; background:#6cf; margin-bottom:5px;}
+#mainContent8 { margin-bottom:5px;}
+#sidebar8 { float:left; width:200px; height:500px; background:#9ff;}
+#content8 { float:right; width:695px; height:500px; background:#cff;}
+/*固定宽度-9*/
+#container9 {margin:0 auto; width:900px;}
+#header9 { height:100px; background:#6cf; margin-bottom:5px;}
+#mainContent9 { height:500px; margin-bottom:5px;}
+#sidebar9 { float:right; width:200px; height:500px; background:#9ff;}
+#content9{ float:left; width:695px; height:500px; background:#cff;}
