@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/reset.css" />
+		<script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+		<link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+		<script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+		<title>分类</title>
+		<style>
+			.categroyWhithCarousel .c01{
+				display: inline-block;
+			}
+		    a:hover{
+		    	color: #AC2925;
+				text-decoration: none;
+			}
+			.categroyMenu{
+				background-color: #E3E3E3;
+				width: 200px;
+				margin-left: 20px;
+				line-height: 30px;
+				z-index: 1;
+				position: absolute;
+			}
+			.eachCategroy a{
+				color: #000000;
+				font-size: 14px;
+				margin-left: 20px;
+			}
+			.eachCategroy span{
+				margin-left: 10px;
+			}
+			.productsAsideCategorys{
+				width: 800px;
+				height: 200px;
+				position: absolute;
+				margin-left: 220px;
+				top:0;
+				left: 0;
+				z-index: 1;
+			}
+			.row{
+				margin: 20px 0 20px 80px;
+				height: 30px;
+				border-bottom: 1px dotted #CCCCCC;
+			}
+			.row a{
+				color: #999;
+    			font-size: 14px;
+   				margin: 8px;
+			}
+			.row a:hover{
+				color: red;
+			}
+		</style>
+		<script>
+			$(function(){
+				$(".eachCategroy").mousemove(function(){
+					var cid = $(this).attr("cid");
+					$(this).css("background-color","#FFFFFF");
+					$(".eachCategroy[cid="+cid+"] a").css("color","#87CEFA");
+					$("div.productsAsideCategorys[cid="+cid+"]").show();
+				})
+				$(".eachCategroy").mouseout(function(){
+					var cid = $(this).attr("cid");
+					$(this).css({"background-color":"#E3E3E3","color":"#000"});
+					$(".eachCategroy[cid="+cid+"] a").css("color","#000");
+					$("div.productsAsideCategorys[cid="+cid+"]").hide();
+				})
+			})
+
+		</script>
+	</head>
+<body>
+	<div class="categroyWhithCarousel">
+		<div class="c01" style="position:relative;">
+			<div class="categroyMenu">
+				<div class="eachCategroy" cid="1">
+					<span class="glyphicon glyphicon-link"></span>
+					<a>平板电脑</a>
+				</div>
+				<div class="eachCategroy" cid="2">
+					<span class="glyphicon glyphicon-link"></span>
+					<a>晾衣架</a>
+				</div>
+				<div class="eachCategroy"  cid="3">
+					<span class="glyphicon glyphicon-link"></span>
+					<a>马桶</a>
+				</div>
+				<div class="eachCategroy"  cid="4">
+					<span class="glyphicon glyphicon-link"></span>
+					<a>沙发</a>
+				</div>
+				<div class="eachCategroy" cid="5">
+					<span class="glyphicon glyphicon-link"></span>
+					<a>电热水器</a>
+				</div>
+				<div class="eachCategroy"  cid="6">
+					<span class="glyphicon glyphicon-link"></span>
+					<a>风扇</a>
+				</div>
+				<div class="eachCategroy" cid="7">
+					<span class="glyphicon glyphicon-link" ></span>
+					<a>空调</a>
+				</div>
+			</div>
+		</div>
+		<div class="c01" style="position:relative; top:0 ;left:0;">
+			<div class="productsAsideCategorys" style="display: none;" cid="1">
+				<div class="row">
+					<a href="#">屏大影院</a>
+					<a href="#">周末</a>
+					<a href="#">新品特惠</a>
+					<a href="#">32吋电视机</a>
+					<a href="#">智能网络</a>
+				</div>
+				<div class="row">
+					<a href="#"> USB高清解</a>
+					<a href="#">芒果TV在线</a>
+					<a href="#">抢购价</a>
+					<a href="#">USB解码</a>
+					<a href="#">32英吋</a>
+					<a href="#">抢购价</a>
+					<a href="#">TCL品牌日</a>
+				</div>	
+				<div class="row">
+					<a href="#">屏大影院</a>
+					<a href="#">周末</a>
+					<a href="#">新品特惠</a>
+					<a href="#">32吋电视机</a>
+					<a href="#">智能网络</a>
+				</div>
+				<div class="row">
+					<a href="#"> USB高清解</a>
+					<a href="#">芒果TV在线</a>
+					<a href="#">抢购价</a>
+					<a href="#">USB解码</a>
+					<a href="#">32英吋</a>
+					<a href="#">抢购价</a>
+					<a href="#">TCL品牌日</a>
+				</div>
+			</div>
+			<div class="productsAsideCategorys" style="display: none;" cid="2">
+				<div class="row">
+					<a href="#">屏</a>
+					<a href="#">周</a>
+					<a href="#">新惠</a>
+					<a href="#">32视机</a>
+					<a href="#">网络</a>
+				</div>
+				<div class="row">
+					<a href="#"> US清解</a>
+					<a href="#">TV在线</a>
+					<a href="#">价</a>
+					<a href="#">U解码</a>
+					<a href="#">32吋</a>
+					<a href="#">90</a>
+					<a href="#">T品牌日</a>
+				</div>	
+				<div class="row">
+					<a href="#">屏大院</a>
+					<a href="#">周末</a>
+					<a href="#">新品特惠</a>
+					<a href="#">3电视机</a>
+					<a href="#">智络</a>
+				</div>
+				<div class="row">
+					<a href="#"> U高清解</a>
+					<a href="#">芒果在线</a>
+					<a href="#">价</a>
+					<a href="#">US码</a>
+					<a href="#">32英吋</a>
+					<a href="#">价</a>
+					<a href="#">品牌日</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
